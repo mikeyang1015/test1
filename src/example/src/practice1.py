@@ -3,13 +3,9 @@
 import rospy
 from time import sleep
 rospy.init_node("hello_python_node")
-n=10
-while n>0:
-   if n==1:
-      sleep(1)
-      print("幫你撐十秒囉！！")
-      n-=1
-   elif n>1:
-      sleep(1)
-      print(n)
-      n-=1
+print("帳號 ： iclab_xiao_ming666")
+s=raw_input("密碼：")
+if s=="aa":
+   print("歡迎！使用者iclab_xiao_ming666")
+else:
+   print("密碼或帳號有誤，請重試")
